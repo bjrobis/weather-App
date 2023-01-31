@@ -1,0 +1,60 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #66a3ff;
+}
+
+.title {
+    margin-inline: auto;
+    text-align: center;
+    font-size: 1.75em;
+    color: orange;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.weatherApp {
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: lightyellow;
+    border-bottom: dotted 6px purple;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+.title:hover {
+    color: black;
+    scale: 125%;
+}
+
+.zipCode {
+    font-size: .8em;
+    text-align: center;
+
+}
+
+.currentBox {
+    margin: auto;
+    border: dashed 3px black;
+    margin-top: 5%;
+    border-radius: 25px;
+    text-align: center;
+    width: 50%;
+    background-color: #cce6ff;
+    font-family: 'Tahoma', sans-serif;
+    color: black;
+    
+}
+
+.icon {
+    margin-bottom: -20px;
+}
+
+.city{
+    margin-bottom: -10px;
+}
