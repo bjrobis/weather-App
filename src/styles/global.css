@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    /*asks the browser to include padding and border when calulating box sizes*/
+    scroll-behavior: smooth;
+  }
+
+
+body {
+    background-color: #66a3ff;
+}
+
+section {
+    min-height: 100vh;
+    /*secions will be at least the height of the screen, or else the height of the content, whichever is taller*/
+    padding: 1rem;
+    border-bottom: 2px dotted #666;
+    background-color: #66a3ff;
+    display: flex;
+    justify-content: center;
+
+  }
+
+section.two {
+    min-height: 90vh;
+    /*secions will be at least the height of the screen, or else the height of the content, whichever is taller*/
+    padding: 1rem;
+    border-bottom: 2px dotted #666;
+    background-color: #cce6ff;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+
+  }
+
+.title {
+    margin-inline: auto;
+    text-align: center;
+    font-size: 1.75em;
+    color: orange;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.weatherApp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightyellow;
+    border-bottom: dotted 6px purple;
+    padding: 10px 0px 15px 0px; 
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.title:hover {
+    color: black;
+    scale: 125%;
+}
+
+.zipCode {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Tahoma', sans-serif;
+
+}
+
+.currentBox {
+    margin: auto;
+    margin-top: 50px;
+    border: dashed 3px black;
+    border-radius: 25px;
+    text-align: center;
+    width: 70vw;
+    height: 75vh;
+    background-color: #cce6ff;
+    font-family: 'Tahoma', sans-serif;
+    color: black;
+    
+}
+
+
+
+.forecastCard {
+    border: solid 2px black;
+    width: 300px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.date {
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+}
+
+.city {
+    color: darkcyan;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    margin-bottom: -20px;
+    margin-top: -15px;
+}
+
+.marginZero {
+    margin: 0;
+}
+
+.forecastButton {
+    background-color: darkcyan;
+    border: solid darkcyan 2px;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    margin-top: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
