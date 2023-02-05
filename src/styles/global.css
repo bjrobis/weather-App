@@ -21,8 +21,9 @@ section {
   }
 
 section.two {
-    min-height: 90vh;
+    min-height: 75vh;
     /*secions will be at least the height of the screen, or else the height of the content, whichever is taller*/
+    margin-top: 40px;
     padding: 1rem;
     border-bottom: 2px dotted #666;
     background-color: #cce6ff;

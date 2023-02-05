@@ -5,6 +5,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 
 const Current = (props) => {
     const [data, setData] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
 
     //get the id path from the URL
     let {id} = useParams();
@@ -18,18 +19,19 @@ const Current = (props) => {
             `http://api.weatherapi.com/v1/forecast.json?key=${Key}&q=${id}&days=5&aqi=no&alerts=no`
         );
         setData(response.data);
-        console.log(data);
+        setIsLoading(false);
     };
     getData();
-    // eslint-disable-next-line 
-  }, []);
+  }, [id]);
+
+  console.log(data);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     navigate(`/forecast/${id}`);
   }
 
-    if (data !== null) {
+    if (isLoading === false) {
     return (
     <React.Fragment>
       <section>
@@ -53,7 +55,9 @@ const Current = (props) => {
 
     );
     } else {
+      return (
       <div className='error'> There was a problem with getting the data</div>
+      )
     }
   }
 

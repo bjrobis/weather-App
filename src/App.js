@@ -11,9 +11,7 @@ import Forecast from './components/Forecast';
 
 function App() {
 
-  
 
-  
   return (
     <React.Fragment>
       <Header />
