@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import Key from '../Key';
 import { useParams } from 'react-router-dom';
 import ForecastCard from './ForecastCard';
 
@@ -17,7 +16,7 @@ const Forecast = (props) => {
     useEffect(() => {
       const getData = async () => {
           const response = await axios.get(
-              `http://api.weatherapi.com/v1/forecast.json?key=${Key}&q=${id}&days=5&aqi=no&alerts=no`
+              `http://api.weatherapi.com/v1/forecast.json?key=46eef890675e46b7b7d172327233001&q=${id}&days=5&aqi=no&alerts=no`
           );
           setData(response.data);
           setIsLoading(false);
